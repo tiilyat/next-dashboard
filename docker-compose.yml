@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: nextuser
+      POSTGRES_PASSWORD: pa$$w0rd
+      POSTGRES_DB: nextdashboard
+    ports:
+      - 5432:5432
